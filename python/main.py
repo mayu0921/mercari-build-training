@@ -128,7 +128,7 @@ async def get_image(image_filename: str):
 
 # データベース接続用の関数
 def get_db_connection() -> Connection:
-    conn = sqlite3.connect('db/mercari.sqlite3')
+    conn = sqlite3.connect('mercari.sqlite3')
     conn.row_factory = sqlite3.Row  # 辞書形式で結果を取得できるようにする
     return conn
 
